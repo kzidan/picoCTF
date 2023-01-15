@@ -1,0 +1,15 @@
+*Information*
+CTF Name: Mod 26
+Profile: picoCTF
+Difficulty: Easy
+Description: This challenge has the hint "Cryptography can be easy, do you know what ROT13 is? cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_Ncualgvd}"
+We can assume the later half of this text is ciphertext encoded in ROT13 which is a type of caesar cipher.
+
+*Steps*
+1) Open a terminal
+2) Used command 'echo "cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_Ncualgvd}" | tr '[A-Za-z]' '[N-ZA-Mn-za-m]''
+                  ^                           ^                                  ^      ^             ^
+          command to display text   cipher text from hint                        |     set 1         set 2
+                                                                                 |     
+                                                                         translate command
+3) Got result "picoCTF{next_time_I'll_try_2_rounds_of_rot13_Aphnytiq}"
