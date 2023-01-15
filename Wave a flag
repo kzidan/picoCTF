@@ -1,0 +1,27 @@
+*Information*
+CTF Name: 
+Profile: picoCTF
+Difficulty: Easy
+Description: This challenge has the description "Can you invoke help flags for a tool or binary? This program has extraordinarily helpful information..."
+with an attatched file 'warm'. 
+
+*Content*
+1) Opened picoCTF webshell 
+2) Copied link of file 'warm' on the challenge prompt
+3) Used the command 'wget https://mercury.picoctf.net/static/cfea736820f329083dab9558c3932ada/warm'
+                      ^                                     ^
+           command to download files                  file location
+4) Attempted to access 'warm' file using command './warm'
+5) Recieved error '-bash: ./warm: Permission denied'
+6) Used command 'chmod +x warm'
+                   ^   ^    ^
+                   |   |file name
+                   |execute perm
+    command to change permissions of file   
+7) Used command './warm'
+8) Recieved text 'Hello user! Pass me a -h to learn what I can do!'
+9) Ran command './warm -h'
+                   ^   ^
+             file name |
+          flag to get more info about file
+10) Recieved message 'Oh, help? I actually don't do much, but I do have this flag here: FLAG WAS HERE'
