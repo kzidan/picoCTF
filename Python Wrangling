@@ -1,0 +1,19 @@
+*Information*
+CTF Name: Python Wrangling
+Profile: picoCTF
+Difficulty: Easy
+Description: This challenge included the description 'Description
+Python scripts are invoked kind of like programs in the Terminal... Can you run this Python script using this password to get the flag?' and includes 3 files.
+
+*Content*
+1) Used commands 'wget https://mercury.picoctf.net/static/b351a89e0bc6745b00716849105f87c6/ende.py' 
+                 'wget https://mercury.picoctf.net/static/b351a89e0bc6745b00716849105f87c6/pw.txt'
+                 'wget https://mercury.picoctf.net/static/b351a89e0bc6745b00716849105f87c6/flag.txt.en'
+2) Used command 'python ende.py'
+                   ^      ^
+                   |   file name
+              run with python
+3) Got results 'Usage: ende.py (-e/-d) [file]'
+4) Used command python ende.py -d ./flag.txt.en
+5) Got results 'Please enter the password:'
+6) Entered password found in the file 'pw.txt'
