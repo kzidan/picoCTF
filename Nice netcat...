@@ -1,0 +1,15 @@
+*Information*
+CTF Name: Nice netcat...
+Profile: picoCTF
+Difficulty: easy
+Description: The description of this challenge is 'There is a nice program that you can talk to by using this command in a shell: $ nc mercury.picoctf.net 35652, but it doesn't speak English...'. It appears after getting information from the netcat command we will be revieving information that is not human readable.
+
+*Content*
+1) Used command 'nc mercury.picoctf.net 35652'
+                 ^         ^              ^
+              netcat    hostname        port
+2) Received a series of numbers ranging from 10-126, appears to be ascii
+3) Navigated to https://www.duplichecker.com/ascii-to-text.php
+4) Pasted numbers into the converter
+5) Clicked 'convert'
+6) Recieved flag
