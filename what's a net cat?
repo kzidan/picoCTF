@@ -1,0 +1,10 @@
+*Information*
+CTF Name: what's a net cat?
+Profile: picoCTF
+Difficulty: easy
+Description: This challenge has the description "Using netcat (nc) is going to be pretty important. Can you connect to jupiter.challenges.picoctf.org at port 25103 to get the flag?" 
+
+*Content*
+1) Used command 'jupiter.challenges.picoctf.org 25103'
+                            ^                     ^
+                         hostname               port
