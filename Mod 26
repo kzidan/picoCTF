@@ -12,4 +12,4 @@ We can assume the later half of this text is ciphertext encoded in ROT13 which i
           command to display text   cipher text from hint                        |     set 1         set 2
                                                                                  |     
                                                                          translate command
-3) Got result "picoCTF{next_time_I'll_try_2_rounds_of_rot13_Aphnytiq}"
+3) Got result that included flag
