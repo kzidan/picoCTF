@@ -1,0 +1,19 @@
+*Information*
+CTF Name: information
+Profile: picoCTF
+Difficulty: Medium
+Description: This ctf has the description 'Files can always be changed in a secret way. Can you find the flag? cat.jpg' and contains a file. It will require us to gain information about the image.
+
+*Content*
+1) Used command 'wget https://mercury.picoctf.net/static/a614a27d4cb251d04c7d2f3f3f76a965/cat.jpg' to get file in webshell
+2) Used command 'exiftool cat.jpg'
+                    ^        ^
+                    |     file name
+       tool used to read metadata from images
+3) Got many results including the License which looked abnonrmal: 'License: cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9'
+                                                                                            ^
+                                                                                     looks to be base64
+4) Used command 'echo 'cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9' | base64 --decode'
+                  ^                     ^                            ^    ^       ^
+                  |              text base64 text                pipeline |   decode flag
+  command to display strings used as arguments                        command used to encode and decode base64
