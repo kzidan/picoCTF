@@ -1,0 +1,18 @@
+*Information*
+CTF Name: Transformation
+Profile: picoCTF
+Difficulty: easy
+Description: The description of this challenge gives us a file as well as some code we can assume was used to encrypt the flag. 
+
+*Content*
+1) Used command 'wget https://mercury.picoctf.net/static/dd6004f51362ff76f98cb8c699510f23/enc' to add the file to our webshell
+2) Used command 'cat enc' to read the contents of the file
+                  ^   ^
+              command |
+                   file name
+3) Received result 灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸弰摤捤㤷慽
+4) Navigated to translate.google.com and set the parameters to detect language -> English
+5) Received gibberish
+6) Navigated to https://gchq.github.io/CyberChef/ a site that detects random types of encoding and attempts to decode it
+7) Set mode to 'Magic' because we are unaware of the type of encryption
+8) Scrolled through results until finding the flag
